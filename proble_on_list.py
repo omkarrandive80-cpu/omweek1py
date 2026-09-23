@@ -37,4 +37,46 @@ else:
     count_odd=count_odd+1
 print("NO. of even elements :",count_even) 
 print("No, of odd elemnts :",count_odd)
+#5 wAr to find maximum and minimum element in a list 
+l1=[10,15,1,105,2,100]
+largest=l1[0]
+for i in range(0,6,1):
+  if largest<l1[i]:
+    largest=l1[i]
+print("largest element in the list is :",largest)
+
+smallest=l1[0]
+for i in range(0,6,1):
+  if smallest>l1[i]:
+     smallest=l1[i]
+print("smallest element in the list is :",smallest)
+#WAP to find the second largest element in a list
+l2=[10,15,1,105,2,100]
+largest=l2[0]
+second_largest=l2[0]
+for i in range(0,6,1):
+  if largest<l2[i]:
+    second_largest=largest
+    largest=l2[i]
+  elif second_largest<l2[i] and l2[i]!=largest:
+    second_largest=l2[i]
+print("Second largest element in the list is :",second_largest)
+#7wap to find count of a no. 3 from the list
+l2=[1,2,2,3,3,3,4,4,4,4]
+count_of_3=0
+for i in range(0,10,1):
+  if l2[i]==3:
+    count_of_3+=1
+print("the count of 3 is :", count_of_3)
+#8 wap to segrigate +ve and -ve no. from list to two different list
+l3=[-1,2,-3,4,-5,6,-7,8,-9,10]
+positive_list=[]  
+negative_list=[]
+for i in range(0,10,1):
+  if l3[i]>0:
+    positive_list.append(l3[i])
+  else:
+    negative_list.append(l3[i])
+print("Positive elements in the list are :",positive_list)
+print("Negative elements in the list are :",negative_list)
     
